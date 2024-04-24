@@ -9,8 +9,14 @@ import history from './data/books/history.json'
 import scifi from './data/books/scifi.json'
 import horror from './data/books/horror.json'
 import SingleBook from './components/SingleBook';
+import BookList from './components/BookList';
 
 function App() {
+  // const book = {
+  //   title: 'Sword of Destiny (The Witcher)',
+  //   img: 'https://images-na.ssl-images-amazon.com/images/I/91uxJwnolDL.jpg',
+  // }
+
   return (
     <div className="App">
       <header>
@@ -20,9 +26,9 @@ function App() {
       <main>
       <MyAlert></MyAlert>
 
-      <hero>
-      {/* <SingleBook></SingleBook> */}
-      </hero>
+      <section className='hero'>
+      <BookList booksData={fantasy} />
+      </section>
 
       <AllTheBooks headerText={'Fantasy Books'} booksData={fantasy}></AllTheBooks>
       <AllTheBooks headerText={'Romance Books'} booksData={romance}></AllTheBooks>

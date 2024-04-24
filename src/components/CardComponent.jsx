@@ -4,7 +4,7 @@ import star from '../assets/images/star.svg';
 
 function BookCard({ book }) {
     return (
-        <Card className='book-card' style={{ display: 'inline-block', marginRight: '15px', width: '300px' }}>
+        <Card className='book-card'>
             <Card.Img className='card-img-top' variant="top" src={book.img} />
             <Card.Body className='card-body'>
                 <Card.Title className='card-title'>{book.title}</Card.Title>
